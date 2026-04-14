@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stéva Coffee.</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">☕ Stéva Coffee.</h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details animate-on-scroll">
+            <h2 class="title">Best Coffee</h2>
+            <h3 class="subtitle">Make your day great with our special coffee!</h3>
+            <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy</p>
+
+            <div class="buttons">
+                <a href="#menu" class="button order-now" id="btn-order-now">Order Now</a>
+                <a href="#contact" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper animate-on-scroll">
+            <img src="images/coffee-hero-section.png" alt="Hero" class="hero-image">
+          </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section" id="about">
+      <div class="section-content">
+        <div class="about-image-wrapper animate-on-scroll">
+          <img src="images/steva coffee.jpg" alt="About" class="about-image">
+        </div>
+        <div class="about-details animate-on-scroll">
+          <h2 class="section-title">About Us</h2>
+          <p class="text">At Stéva Coffee., we offer quality coffee with an honest taste and an atmosphere that makes you want to return. Every serving is made with the best ingredients and a touch of passion from our baristas. We want to be your favorite place to work, relax, or meet friends—with coffee that makes your day better.</p>
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/stefanytuyu/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section class="menu-section" id="menu">
+      <h2 class="section-title animate-on-scroll">Our Menu</h2>
+      <div class="section-content">
+        <!-- Category Filter Buttons -->
+        <div class="menu-filter animate-on-scroll">
+          <button class="filter-btn active" data-category="all">
+            <i class="fa-solid fa-border-all"></i> All
+          </button>
+          <button class="filter-btn" data-category="hot">
+            <i class="fa-solid fa-mug-hot"></i> Hot Beverages
+          </button>
+          <button class="filter-btn" data-category="cold">
+            <i class="fa-solid fa-snowflake"></i> Cold Beverages
+          </button>
+          <button class="filter-btn" data-category="snacks">
+            <i class="fa-solid fa-cookie-bite"></i> Snacks
+          </button>
+        </div>
+
+        <!-- Menu Grid -->
+        <ul class="menu-list animate-on-scroll" id="menu-list">
+          <!-- Hot Beverages -->
+          <li class="menu-item" data-category="hot">
+            <img src="images/hot-beverages.png" alt="Espresso" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Espresso</h3>
+              <p class="text">Rich and bold single shot of pure coffee essence.</p>
+              <span class="price">Rp 25.000</span>
+              <button class="add-to-cart-btn" data-name="Espresso" data-price="25000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="hot">
+            <img src="images/hot-beverages.png" alt="Cappuccino" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Cappuccino</h3>
+              <p class="text">Creamy espresso topped with velvety steamed milk foam.</p>
+              <span class="price">Rp 35.000</span>
+              <button class="add-to-cart-btn" data-name="Cappuccino" data-price="35000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="hot">
+            <img src="images/hot-beverages.png" alt="Caramel Latte" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Caramel Latte</h3>
+              <p class="text">Smooth latte blended with sweet caramel syrup.</p>
+              <span class="price">Rp 38.000</span>
+              <button class="add-to-cart-btn" data-name="Caramel Latte" data-price="38000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="hot">
+            <img src="images/hot-beverages.png" alt="Americano" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Americano</h3>
+              <p class="text">Classic espresso diluted with hot water for a smooth taste.</p>
+              <span class="price">Rp 28.000</span>
+              <button class="add-to-cart-btn" data-name="Americano" data-price="28000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+
+          <!-- Cold Beverages -->
+          <li class="menu-item" data-category="cold">
+            <img src="images/cold-beverages.png" alt="Iced Latte" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Iced Latte</h3>
+              <p class="text">Chilled espresso with cold milk over ice cubes.</p>
+              <span class="price">Rp 32.000</span>
+              <button class="add-to-cart-btn" data-name="Iced Latte" data-price="32000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="cold">
+            <img src="images/cold-beverages.png" alt="Cold Brew" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Cold Brew</h3>
+              <p class="text">Slow-steeped cold coffee for ultimate smoothness.</p>
+              <span class="price">Rp 36.000</span>
+              <button class="add-to-cart-btn" data-name="Cold Brew" data-price="36000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="cold">
+            <img src="images/cold-beverages.png" alt="Iced Mocha" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Iced Mocha</h3>
+              <p class="text">Chocolate and espresso shaken with ice and milk.</p>
+              <span class="price">Rp 38.000</span>
+              <button class="add-to-cart-btn" data-name="Iced Mocha" data-price="38000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="cold">
+            <img src="images/refreshment.png" alt="Tropical Refresher" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Tropical Refresher</h3>
+              <p class="text">Fruity iced blend to cool you down on sunny days.</p>
+              <span class="price">Rp 30.000</span>
+              <button class="add-to-cart-btn" data-name="Tropical Refresher" data-price="30000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+
+          <!-- Snacks -->
+          <li class="menu-item" data-category="snacks">
+            <img src="images/desserts.png" alt="Chocolate Croissant" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Chocolate Croissant</h3>
+              <p class="text">Buttery flaky pastry filled with rich chocolate.</p>
+              <span class="price">Rp 28.000</span>
+              <button class="add-to-cart-btn" data-name="Chocolate Croissant" data-price="28000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="snacks">
+            <img src="images/burger-frenchfries.png" alt="Classic Burger" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Classic Burger</h3>
+              <p class="text">Juicy beef patty with fresh lettuce and special sauce.</p>
+              <span class="price">Rp 45.000</span>
+              <button class="add-to-cart-btn" data-name="Classic Burger" data-price="45000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="snacks">
+            <img src="images/special-combo.png" alt="Combo Special" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Combo Special</h3>
+              <p class="text">Coffee + pastry combo at an unbeatable price.</p>
+              <span class="price">Rp 55.000</span>
+              <button class="add-to-cart-btn" data-name="Combo Special" data-price="55000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+          <li class="menu-item" data-category="snacks">
+            <img src="images/desserts.png" alt="Tiramisu Cake" class="menu-image">
+            <div class="menu-details">
+              <h3 class="name">Tiramisu Cake</h3>
+              <p class="text">Layers of coffee-soaked sponge and mascarpone cream.</p>
+              <span class="price">Rp 40.000</span>
+              <button class="add-to-cart-btn" data-name="Tiramisu Cake" data-price="40000">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>  
+    </section>
+
+    <!-- Floating Cart Button -->
+    <button class="floating-cart-btn" id="floating-cart-btn" title="View Cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h3><i class="fa-solid fa-cart-shopping"></i> Your Cart</h3>
+        <button class="cart-close-btn" id="cart-close-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="cart-items" id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </ul>
+      <div class="cart-empty-msg" id="cart-empty-msg">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <p>Your cart is empty</p>
+      </div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">Rp 0</span>
+        </div>
+        <button class="checkout-btn" id="checkout-btn">
+          <i class="fa-solid fa-check"></i> Checkout
+        </button>
+      </div>
+    </aside>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast-notification">
+      <i class="fa-solid fa-circle-check"></i>
+      <span id="toast-message">Item added to cart!</span>
+    </div>
+
+    <!-- Testimonials section -->
+    <section class="testimonials-section" id="testimonials">
+      <h2 class="section-title animate-on-scroll">Testimonials</h2>
+      <div class="section-content">
+        <div class="slider-container animate-on-scroll">
+          <div class="slider-wrapper swiper">
+            <ul class="testimonials-list swiper-wrapper">
+              <li class="testimonial swiper-slide">
+                <img src="images/user one.jpg" alt="User" class="user-image">
+                <h3 class="name">Huh Yunjin</h3>
+                <i class="feedback">"Loved the French roast, 정말 맛있어요. Perfectly balanced and rich. Will order again!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user two.jpg" alt="User" class="user-image">
+                <h3 class="name">Kim Mingyu</h3>
+                <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user three.jpg" alt="User" class="user-image">
+                <h3 class="name">Park Sunghoon</h3>
+                <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user four.jpg" alt="User" class="user-image">
+                <h3 class="name">Kim Minjeong</h3>
+                <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend guyss"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user five.jpg" alt="User" class="user-image">
+                <h3 class="name">Choi Yeonjun</h3>
+                <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user six.jpg" alt="" class="user-image">
+                <h3 class="name">Karinaaa</h3>
+                <i class="feedback">"The prices are affordable, but the taste feels premium. It’s rare to find a place with this quality at this price. Totally worth it!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user seven.jpg" alt="" class="user-image">
+                <h3 class="name">Sanaa Minatozaki</h3>
+                <i class="feedback">"Love the cozy atmosphere—perfect for studying or just relaxing."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user eight.jpg" alt="" class="user-image">
+                <h3 class="name">Carmenita</h3>
+                <i class="feedback">"The coffee tastes so smooth and rich. Definitely my new favorite spot!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user nine.jpg" alt="" class="user-image">
+                <h3 class="name">Tae Taehyung Kim</h3>
+                <i class="feedback">"Best cappuccino I've had in a long time. Truly impressive!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user ten.jpg" alt="" class="user-image">
+                <h3 class="name">Jungwoo</h3>
+                <i class="feedback">"Great place to hang out with friends. We enjoyed every moment."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user eleven.jpg" alt="" class="user-image">
+                <h3 class="name">Ning Ning</h3>
+                <i class="feedback">"Affordable prices with premium taste—totally worth it!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user twelve.jpg" alt="" class="user-image">
+                <h3 class="name">Yoona Noona</h3>
+                <i class="feedback">"I love the cozy and warm atmosphere. It's the perfect place to study, work, or just relax with a good drink. I could stay here for hours."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user thirteen.jpg" alt="" class="user-image">
+                <h3 class="name">Jaemin Na</h3>
+                <i class="feedback">"Their iced coffee is refreshing and perfectly balanced."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user fourteen.jpg" alt="" class="user-image">
+                <h3 class="name">Lee Lesseo</h3>
+                <i class="feedback">"The desserts pair so well with the coffee. Everything tastes amazing!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user fifteen.jpg" alt="" class="user-image">
+                <h3 class="name">Hamada Asahi</h3>
+                <i class="feedback">"Once you try it, you'll keep coming back. Highly recommended!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user sixteen.jpg" alt="" class="user-image">
+                <h3 class="name">Jeon Wonwoo</h3>
+                <i class="feedback">"A must-visit for anyone who loves good coffee and a calm space."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user svteeen.jpg" alt="" class="user-image">
+                <h3 class="name">Jang Wonyoung</h3>
+                <i class="feedback">"Friendly staff and quick service. I felt so welcomed here."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user eighteen.jpg" alt="" class="user-image">
+                <h3 class="name">Jisoo</h3>
+                <i class="feedback">"The latte art is beautiful, and the flavor makes it even better. Every sip feels special. Such a lovely experience!"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user nineteen.jpg" alt="" class="user-image">
+                <h3 class="name">Kwon Soon Young</h3>
+                <i class="feedback">"I could sit here for hours. The music and ambience are perfect."</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="images/user twenty.jpg" alt="" class="user-image">
+                <h3 class="name">Lee Ji Eun</h3>
+                <i class="feedback">"Super clean and well-maintained. I really appreciate the details."</i>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title animate-on-scroll">Gallery</h2>
+      <div class="section-content">
+        <ul class="gallery-list animate-on-scroll">
+          <li class="gallery-item">
+            <img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title animate-on-scroll">Contact Us</h2>
+      <div class="section-content">
+        <ul class="contact-info-list animate-on-scroll">
+          <li class="contact-info">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>42, Hangang-daero, Yongsan-gu, Seoul</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@stevacoffeewebsite.com</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>(123) 456-78909</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday - Friday: 8:00 AM - 9:00 PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Saturday: 9:00 AM - 10:00 PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Sunday: Closed</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-globe"></i>
+            <p>www.stevacoffeeweb.com</p>
+          </li>
+        </ul>
+
+        <form action="#" class="contact-form animate-on-scroll">
+          <input type="text" placeholder="Your name" class="form-input" required>
+          <input type="email" placeholder="Your email" class="form-input" required>
+          <textarea placeholder="Your message" class="form-input" required></textarea>
+          <button class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section" id="footer">
+      <div class="section-content">
+        <p class="copyright-text">@ 2025 Coffee Shop</p>
+
+        <div class="social-link-list">
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/stefanytuyu/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator"></span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
